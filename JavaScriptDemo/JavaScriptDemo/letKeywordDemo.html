@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Let Demo</title>
+    <script>
+        function TestLet() {
+            let x = "Hello";
+            var v = "";
+            if (x == "Hello") {
+                let x = "Welcome";
+                //var v = ""; //Error
+                alert(x);
+            }
+            alert(x);
+        }
+    </script>
+</head>
+<body onload="TestLet()">
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JS Conversion Demo</title>
+    <script>
+        function StringToNumbers() {
+            
+            //var num1 = "12.5";
+            //var num2 = "15";
+            //var sum = num1 + num2;
+            //alert(sum);
+
+            var num1 = Number(document.getElementById("txt1").value);
+            var num2 = Number(document.getElementById("txt2").value);
+            var True = Number(true);
+            var False = Number(false);
+            var sum = num1 + num2;
+
+            console.log("The result after converting String to Numbers using Number():" + sum);
+            document.getElementById("result").innerHTML = sum;
+
+            var number1 = parseInt("12");
+            var number2 = parseFloat("23.5");
+            var num = parseInt("");
+            var result = number1 + number2;
+            console.log(num);
+            console.log("The result after converting String to Numbers using parseInt() and parseFloat():" + result);
+
+        }
+
+        function NumbersToString() {
+            var str1 = String(20);
+            var str2 = String(30);
+            var result = str1 + str2;
+            console.log("After converting number to string:"+result);
+        }
+        function DateToString() {
+            var str1 = String(Date());
+            console.log("After converting Date to string:" + str1);
+        }
+    </script>
+</head>
+<body onload="NumbersToString(),DateToString()">
+    Enter Number1:<input id="txt1" type="text" />
+    Enter Number2:<input id="txt2" type="text" />
+    <button id="btn" onclick="StringToNumbers()">SUM</button>
+    <br />
+    Result:<p id="result"></p>
+
+</body>
+</html>
