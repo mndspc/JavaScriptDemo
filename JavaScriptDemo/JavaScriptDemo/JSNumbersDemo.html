@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JS Numbers Demo</title>
+    <script>
+        function JSNumbers() {
+            let x = 10.23;
+            let y = 100;
+            let z = 4543543543;
+            let num = "100";
+            let numObj = new Number(100);
+            let x1 = Number.MIN_VALUE;
+            let y1 = Number.MAX_VALUE;
+            document.getElementById("p1").innerHTML = isNaN(num);
+            document.getElementById("p2").innerHTML = x1;
+            document.getElementById("p3").innerHTML = y1;
+        }
+    </script>
+</head>
+<body onload="JSNumbers()">
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+</body>
+</html>

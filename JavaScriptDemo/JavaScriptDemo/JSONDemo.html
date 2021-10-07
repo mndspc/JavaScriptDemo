@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function JSONObjects() {
+            var myJSON = '{"name":"John","age":30,"car":null}';
+            var JSObj = JSON.parse(myJSON);
+            document.getElementById("p1").innerHTML = JSObj.name;
+
+        }
+
+        function LoopingJSON() {
+            var myJSON = '{"name":"John","age":30,"car":null}';
+            var JSObj = JSON.parse(myJSON);
+            let text = "";
+            for (let x in JSObj) {
+                text += JSObj[x] + ",";
+            }
+            document.getElementById("p2").innerHTML = text;
+        }
+
+        function JSONToArray() {
+            const text = '["Ford","BMW","Audi","Fiat"]';
+            const myArray = JSON.parse(text);
+            document.getElementById("p3").innerHTML = myArray.toString();
+        }
+
+        function JSONToJSObj() {
+            const JSObj = { name: "Scott", age: 30, city: "Pune" };
+            const myJSON = JSON.stringify(JSObj);
+            document.getElementById("p4").innerHTML = myJSON;
+        }
+
+        function JSONStringyfiWithArray() {
+            const JSArray = ["scott", "jhones", "smith"];
+            const myJSON = JSON.stringify(JSArray);
+            document.getElementById("p5").innerHTML = myJSON;
+
+        }
+    </script>
+</head>
+<body onload="JSONObjects(),LoopingJSON(),JSONToArray(),JSONToJSObj(),JSONStringyfiWithArray()">
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+</body>
+</html>

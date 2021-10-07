@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Functions Demo</title>
+    <script>
+        function Sum(cnt1, cnt2) {
+            var num1 = document.getElementById(cnt1).value;
+            var num2 = document.getElementById(cnt2).value;
+            var sum = parseInt(num1) + parseInt(num2);
+            document.getElementById("result").innerHTML = sum;
+        }
+    </script>
+    <script src="Common.js"></script>
+</head>
+<body>
+    Enter First Number:<input type="text" id="txt1" /><br />
+    Enter Second Number:<input type="text" id="txt2" /><br />
+    <button onclick="Sum('txt1','txt2')">SUM</button><br />
+    Sum:<p id="result"></p>
+
+    <button onclick="PrintSum('txt1','txt2')">SUM</button>
+</body>
+</html>

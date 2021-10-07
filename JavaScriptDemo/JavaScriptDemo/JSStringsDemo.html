@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JS String</title>
+    <script>
+        function StringFun() {
+            let x = "scott";
+            let y = new String("Scott");
+            let num = new Number(100);
+            let bool = new Boolean(true);
+            document.getElementById("p1").innerHTML = typeof (x);
+            document.getElementById("p2").innerHTML = typeof (y);
+            document.getElementById("p3").innerHTML = typeof (num);
+            document.getElementById("p4").innerHTML = typeof (bool);
+            document.getElementById("p5").innerHTML = x==y;
+            document.getElementById("p6").innerHTML = x.length;
+            var str = "Welcome to String Functions";
+            document.getElementById("p7").innerHTML = str.slice(11, str.length);
+            document.getElementById("p8").innerHTML = str.substring(0, 7);
+            document.getElementById("p9").innerHTML = str.replace("String", "str");
+            document.getElementById("p10").innerHTML = str.toLowerCase();
+            document.getElementById("p11").innerHTML = str.toUpperCase();
+
+
+        }
+    </script>
+</head>
+<body onload="StringFun()">
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <p id="p7"></p>
+    <p id="p8"></p>
+    <p id="p9"></p>
+    <p id="p10"></p>
+    <p id="p11"></p>
+
+</body>
+</html>

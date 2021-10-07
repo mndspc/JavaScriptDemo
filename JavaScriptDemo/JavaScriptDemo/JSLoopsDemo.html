@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JS Loops Demo</title>
+    <script>
+        function ForLoopDemo() {
+            const mobiles = ["samsung", "MI", "one-plus", "vivo", "iphone", "oppo"];
+            for (let i = 0; i < mobiles.length; i++) {
+                alert(mobiles[i]);
+            }
+        }
+        function ForInDemo() {
+            const mobiles = ["samsung", "MI", "one-plus", "vivo", "iphone", "oppo"];
+            for (let x in mobiles) {
+                alert(mobiles[x]);
+            }
+        }
+        function ForOfDemo() {
+            const mobiles = ["samsung", "MI", "one-plus", "vivo", "iphone", "oppo"];
+            for (let x of mobiles) {
+                alert(x);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="For Loop" onclick="ForLoopDemo()" />
+    <input type="button" value="For In Demo" onclick="ForInDemo()" />
+    <input type="button" value="For Of Demo" onclick="ForOfDemo()" />
+</body>
+</html>

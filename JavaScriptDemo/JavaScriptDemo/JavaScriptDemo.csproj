@@ -67,11 +67,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Common.js" />
+    <Content Include="FunctionsDemo.html" />
     <Content Include="Global.asax" />
     <Content Include="Images\andorid.png" />
     <Content Include="Images\Keyboard.jpeg" />
     <Content Include="Images\mouse.jpeg" />
+    <Content Include="JSConditions.html" />
     <Content Include="JSConversionDemo.html" />
+    <Content Include="JSEventDemo.html" />
+    <Content Include="JSLoopsDemo.html" />
+    <Content Include="JSNumbersDemo.html" />
+    <Content Include="JSObjectsDemo.html" />
+    <Content Include="JSONDemo.html" />
+    <Content Include="JSStringsDemo.html" />
     <Content Include="JSTypeOperator.html" />
     <Content Include="JSVariableDemo.html" />
     <Content Include="letKeywordDemo.html" />

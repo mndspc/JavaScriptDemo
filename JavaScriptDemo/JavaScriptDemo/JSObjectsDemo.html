@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JS Objects Demo</title>
+    <script>
+        function JSObjects() {
+            const person = {
+                firstName: "Scott",
+                lastName: "Moody",
+                age: 35,
+                email: "scott@gmail.com",
+
+                Message: function () { return this.firstName + " " + this.lastName + " " + this.age + " " + this.email; }
+            };
+            document.getElementById("result").innerHTML = person.Message();
+        }
+    </script>
+</head>
+<body onload="JSObjects()">
+    <p id="result"></p>
+    
+</body>
+</html>
